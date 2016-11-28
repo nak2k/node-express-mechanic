@@ -1,0 +1,39 @@
+{
+  "name": "express-mechanic",
+  "version": "0.0.1",
+  "description": "Configure Express",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-express-mechanic/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "lazy-property": "^1.0.0",
+    "pug": "^2.0.0-beta11",
+    "serve-static": "^1.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.2.2",
+    "eslint": "^3.18.0"
+  },
+  "homepage": "https://github.com/nak2k/node-express-mechanic",
+  "keywords": [
+    "express",
+    "express-mechanic"
+  ],
+  "license": "MIT",
+  "main": "lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-express-mechanic.git"
+  },
+  "scripts": {
+    "build": "npm run lint && babel -d lib/ src/",
+    "lint": "eslint src/"
+  },
+  "files": [
+    "README.md",
+    "lib/"
+  ]
+}
