@@ -16,8 +16,11 @@ const CREDENTIAL_CLASSES = [
 const SERVICE_CLASSES = [
   'ACM',
   'APIGateway',
+  'ApplicationAutoScaling',
   'AutoScaling',
+  'Batch',
   'Budgets',
+  'CloudDirectory',
   'CloudFormation',
   'CloudFront',
   'CloudHSM',
@@ -27,6 +30,7 @@ const SERVICE_CLASSES = [
   'CloudWatch',
   'CloudWatchEvents',
   'CloudWatchLogs',
+  'CodeBuild',
   'CodeCommit',
   'CodeDeploy',
   'CodePipeline',
@@ -38,6 +42,7 @@ const SERVICE_CLASSES = [
   'DeviceFarm',
   'DirectConnect',
   'DirectoryService',
+  'Discovery',
   'DMS',
   'DynamoDB',
   'DynamoDBStreams',
@@ -53,7 +58,9 @@ const SERVICE_CLASSES = [
   'EMR',
   'ES',
   'Firehose',
+  'GameLift',
   'Glacier',
+  'Health',
   'IAM',
   'ImportExport',
   'Inspector',
@@ -63,30 +70,43 @@ const SERVICE_CLASSES = [
   'KinesisAnalytics',
   'KMS',
   'Lambda',
+  'LexRuntime',
+  'Lightsail',
   'MachineLearning',
   'MarketplaceCommerceAnalytics',
   'MarketplaceMetering',
   'MobileAnalytics',
+  'MTurk',
   'OpsWorks',
+  'OpsWorksCM',
+  'Organizations',
+  'Pinpoint',
+  'Polly',
   'RDS',
   'Redshift',
+  'Rekognition',
   'Route53',
   'Route53Domains',
   'S3',
   'ServiceCatalog',
   'SES',
+  'Shield',
   'SimpleDB',
   'SMS',
   'Snowball',
   'SNS',
   'SQS',
   'SSM',
+  'StepFunctions',
   'StorageGateway',
   'STS',
   'Support',
   'SWF',
   'WAF',
+  'WAFRegional',
+  'WorkDocs',
   'WorkSpaces',
+  'XRay',
 ];
 
 export const aws = (options = {}) => app => next =>
@@ -103,6 +123,8 @@ export const aws = (options = {}) => app => next =>
     for(const key of SERVICE_CLASSES) {
       lazyProperty(app, key, () => new AWS[key]());
     }
+
+    lazyProperty(app, 'DocumentClient', () => new AWS.DynamoDB.DocumentClient());
 
     next();
   });
