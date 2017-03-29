@@ -38,6 +38,7 @@ const SERVICE_CLASSES = [
   'CognitoIdentityServiceProvider',
   'CognitoSync',
   'ConfigService',
+  'CUR',
   'DataPipeline',
   'DeviceFarm',
   'DirectConnect',
