@@ -13,8 +13,6 @@
     "serve-static": "^1.12.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-env": "^1.2.2",
     "eslint": "^3.18.0"
   },
   "homepage": "https://github.com/nak2k/node-express-mechanic",
