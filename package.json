@@ -7,10 +7,10 @@
     "url": "https://github.com/nak2k/node-express-mechanic/issues"
   },
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.17.2",
     "lazy-property": "^1.0.0",
-    "pug": "^2.0.0-beta11",
-    "serve-static": "^1.12.1"
+    "pug": "^2.0.0-rc.2",
+    "serve-static": "^1.12.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
