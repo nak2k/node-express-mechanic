@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
-    "lazy-property": "^1.0.0",
+    "lazy-aws-service": "0.0.1",
     "pug": "^2.0.0-rc.2",
     "serve-static": "^1.12.3"
   },
   "devDependencies": {
+    "aws-sdk": "^2.74.0",
     "eslint": "^4.0.0"
   },
   "homepage": "https://github.com/nak2k/node-express-mechanic",
