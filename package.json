@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.74.0",
-    "eslint": "^4.0.0"
+    "eslint": "^4.0.0",
+    "tape": "^4.6.3"
   },
   "homepage": "https://github.com/nak2k/node-express-mechanic",
   "keywords": [
@@ -28,8 +29,8 @@
     "url": "git+https://github.com/nak2k/node-express-mechanic.git"
   },
   "scripts": {
-    "build": "npm run lint && babel -d lib/ src/",
-    "lint": "eslint src/"
+    "lint": "eslint lib/",
+    "test": "tape test/*.js"
   },
   "files": [
     "README.md",
