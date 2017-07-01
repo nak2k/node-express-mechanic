@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
+    "debug": "^2.6.8",
     "lazy-aws-service": "0.0.1",
     "pug": "^2.0.0-rc.2",
     "serve-static": "^1.12.3"
