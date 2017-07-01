@@ -14,7 +14,7 @@
     "serve-static": "^1.12.3"
   },
   "devDependencies": {
-    "aws-sdk": "^2.77.0",
+    "aws-sdk": "^2.80.0",
     "eslint": "^4.1.1",
     "tape": "^4.7.0"
   },
