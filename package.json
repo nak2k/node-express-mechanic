@@ -1,6 +1,6 @@
 {
   "name": "express-mechanic",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "Configure Express",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
