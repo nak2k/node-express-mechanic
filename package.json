@@ -11,7 +11,7 @@
     "debug": "^4.1.1",
     "lazy-aws-service": "^0.1.4",
     "proxy-agent": "^3.0.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "serve-static": "^1.13.2"
   },
   "devDependencies": {
