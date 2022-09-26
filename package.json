@@ -10,7 +10,7 @@
     "body-parser": "^1.18.3",
     "debug": "^4.1.1",
     "lazy-aws-service": "^0.1.4",
-    "proxy-agent": "^3.0.3",
+    "proxy-agent": "^5.0.0",
     "pug": "^3.0.1",
     "serve-static": "^1.13.2"
   },
